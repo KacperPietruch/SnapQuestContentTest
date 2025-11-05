@@ -17,7 +17,7 @@ namespace Code.CameraTool
             NotableObject notableObject
         );
 
-        private readonly int defaultCameraFieldOfView = 60;
+        //private readonly int defaultCameraFieldOfView = 60;
         private readonly bool isRaycastVersionInsteadOfThickBox_ = true;
         private bool checkedIfPhotoFileEsistsAndIfNotCreateIt;
         private RenderTexture renderTexture_;

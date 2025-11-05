@@ -8,7 +8,7 @@ namespace Code.Interactables
     public class InteractionManager : MonoBehaviour
     {
         private BaseInteractable CurrentInteractableTarget;
-        private InteractionType CurrentInteractionType;
+        //private InteractionType CurrentInteractionType;
         public InteractableUI InteractableUI;
         public bool IsInInteraction;
         public PlayerInput PlayerInput;
@@ -69,7 +69,7 @@ namespace Code.Interactables
 
             CurrentInteractableTarget = interactable;
             CurrentInteractableTarget.EnableAllOutlines();
-            CurrentInteractionType = InteractionType.TOUCH;
+            //CurrentInteractionType = InteractionType.TOUCH;
 
             InteractableUI.SetImageAndText(
                 interactable.TextToDisplay,
