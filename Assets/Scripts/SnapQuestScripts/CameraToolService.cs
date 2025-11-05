@@ -103,7 +103,6 @@ namespace Code.CameraTool
             CameraToolVcamCamera.transform.localRotation = Quaternion.Euler(currentX, 0,0);
             
             PlayerRoot.Rotate(Vector3.up, moveDistance.x);
-
         }
 
         public CameraTripod GetCameraTripod()
@@ -368,18 +367,6 @@ namespace Code.CameraTool
             );
             Debug.DrawRay(ray.origin, ray.direction * 10, Color.cyan);
             return ray;
-        }
-
-        public void ToggleCamera()
-        {
-            if (UsingCameraTool)
-            {
-                DeactivateCameraTool();
-            }
-            else
-            {
-                ActivateCameraTool();
-            }
         }
 
         private void TakePictureInputHandler(InputAction.CallbackContext context)
