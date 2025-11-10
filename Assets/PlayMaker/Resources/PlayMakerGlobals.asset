@@ -32,7 +32,9 @@ MonoBehaviour:
     - 
     variableCategoryIDs: 
   events:
-  - Captured
   - StartInteract
   - Key2Found
   - Key1Found
+  - Captured
+  - Creature1ReachedEnd
+  - Creature2ReachedEnd
